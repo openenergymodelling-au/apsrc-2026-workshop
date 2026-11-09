@@ -1,7 +1,7 @@
 ---
 order: 3
 
-title: "Resource Adequacy, Risk, and Resilience in Low-Carbon Energy System Planning: Methods, Tools, and Metrics"
+title: "Resource adequacy modelling suite for the NEM"
 
 authors:
   - name: Tim Kopka
