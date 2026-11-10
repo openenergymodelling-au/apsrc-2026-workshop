@@ -1,7 +1,7 @@
 ---
 order: 4
 
-title: "OPF tools and 'experiments in the browser'"
+title: "Power-system experiments in the browser: Tellegen and PowerIO"
 
 authors:
   - name: Fred Geth
@@ -26,11 +26,13 @@ links:
     url: https://github.com/distribution-system-opt/math-and-data-model-specifications
 ---
 
-
-BMOPFTools is a Julia library connecting network-data diagnostics, geospatial
-review, and multiconductor power-flow and optimal power flow (OPF) workflows.
-Import OpenDSS or BMOPF cases, investigate modelling inconsistencies, prepare
-study scenarios, and check the resulting solutions—with explicit assumptions
-and traceable transformations.
-
-Presentation on experience of running everything in the browser
+What if exploring a power-system model started with opening a web page? This
+talk introduces Tellegen and PowerIO, open-source tools for interactive
+power-system studies in the browser. PowerIO reads and converts network data,
+while Tellegen provides power-flow and optimal-power-flow calculations and
+visualisation. A short demonstration will show how changing demand or a line
+rating produces an immediate sensitivity-based preview, followed by a fresh
+solve. Case files and calculations remain on the user’s device. The talk will
+explore opportunities for teaching, research and sharing executable studies,
+with further demonstrations and hands-on discussion during the open-floor
+session.
