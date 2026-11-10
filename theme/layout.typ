@@ -76,6 +76,7 @@
   time: none,
   venue: none,
   note: none,
+  support: none,
   logos: (),
   draft: none,
 ) = with-theme(t => {
@@ -104,6 +105,7 @@
     if time != none { block(below: 0.4em, time) }
     let place = (venue, note).filter(x => x != none)
     if place.len() > 0 { block(below: 0.4em, text(fill: t.muted, place.join(meta-sep))) }
+    if support != none { block(below: 0.4em, text(fill: t.muted, support)) }
     if logos.len() > 0 {
       block(above: 1em, stack(
         dir: ltr,

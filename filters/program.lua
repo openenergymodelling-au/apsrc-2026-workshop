@@ -209,7 +209,7 @@ local function load_program(meta)
 
   local ev = meta.event or {}
   local event = { logos = {} }
-  for _, key in ipairs({ "kicker", "title", "date", "time", "venue", "note" }) do
+  for _, key in ipairs({ "kicker", "title", "date", "time", "venue", "note", "support" }) do
     event[key] = inlines_or_nil(ev[key])
   end
   for _, path in ipairs(as_list(ev.logos)) do event.logos[#event.logos + 1] = stringify(path) end
@@ -306,7 +306,7 @@ function T.header(event, draft)
     logos[#logos + 1] = "image(" .. T.str(path) .. ", height: 100%)"
   end
   local args = {}
-  for _, key in ipairs({ "kicker", "title", "date", "time", "venue", "note" }) do
+  for _, key in ipairs({ "kicker", "title", "date", "time", "venue", "note", "support" }) do
     args[#args + 1] = key .. ": " .. T.inl(event[key])
   end
   args[#args + 1] = "logos: " .. T.array(logos)
@@ -417,6 +417,7 @@ function H.header(event)
   if event.venue then place[#place + 1] = H.inl(event.venue) end
   if event.note then place[#place + 1] = H.inl(event.note) end
   if #place > 0 then out[#out + 1] = H.tag("p", "event-header__place", table.concat(place, " · ")) end
+  if event.support then out[#out + 1] = H.tag("p", "event-header__place", H.inl(event.support)) end
   if #event.logos > 0 then
     local imgs = {}
     for _, path in ipairs(event.logos) do imgs[#imgs + 1] = '<img src="' .. H.attr(path) .. '" alt="">' end

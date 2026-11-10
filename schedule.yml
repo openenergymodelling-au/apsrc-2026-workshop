@@ -16,7 +16,8 @@ event:
   date: "Monday 30 November 2026"
   time: "11:00 am for an 11:30 am start · Finishes 4:00 pm, followed by networking"
   venue: "Australian National University, Canberra"   # building / room to come
-  note: "In person only · Supported by RACE for 2030"
+  note: "In person only"
+  support: "Supported by RACE for 2030 and DCCEEW"   # own line under the venue
   # Logos appear under the header. Paths are relative to this folder.
   # logos:
   #   - logos/apsrc.svg
