@@ -5,12 +5,32 @@ title: "Resource adequacy modelling suite for the NEM"
 
 authors:
   - name: Tim Kopka
+    presenter: true
+    affiliation: The University of Melbourne
+    affiliation-short: UniMelb
+  - name: Muhammad Yasirroni
+    affiliation: The University of Melbourne
+    affiliation-short: UniMelb
+  - name: Pablo Apablaza
+    affiliation: The University of Melbourne
+    affiliation-short: UniMelb
+  - name: Bastian Moya
+    affiliation: The University of Melbourne
+    affiliation-short: UniMelb
+  - name: Sleiman Mhanna
+    honorific: Dr
+    affiliation: The University of Melbourne
+    affiliation-short: UniMelb
+  - name: Pierluigi Mancarella
+    honorific: Prof
     affiliation: The University of Melbourne
     affiliation-short: UniMelb
 
 links:
   - label: Modelling suite
     url: https://github.com/ARPST-UniMelb
+  - label: Report (AR-PST Stage 5, Topic 4-1)
+    url: https://www.csiro.au/en/research/technology-space/energy/Electricity-transition/AR-PST/Stage-5
 ---
 
 With the projected retirement of thermal coal power plants and the associated
