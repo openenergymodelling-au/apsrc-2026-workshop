@@ -5,6 +5,24 @@ title: "Resource adequacy modelling suite for the NEM"
 
 authors:
   - name: Tim Kopka
+    presenter: true
+    affiliation: The University of Melbourne
+    affiliation-short: UniMelb
+  - name: Muhammad Yasirroni
+    affiliation: The University of Melbourne
+    affiliation-short: UniMelb
+  - name: Pablo Apablaza
+    affiliation: The University of Melbourne
+    affiliation-short: UniMelb
+  - name: Bastian Moya
+    affiliation: The University of Melbourne
+    affiliation-short: UniMelb
+  - name: Sleiman Mhanna
+    honorific: Dr
+    affiliation: The University of Melbourne
+    affiliation-short: UniMelb
+  - name: Pierluigi Mancarella
+    honorific: Prof
     affiliation: The University of Melbourne
     affiliation-short: UniMelb
 
