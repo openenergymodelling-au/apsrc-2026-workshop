@@ -29,6 +29,8 @@ authors:
 links:
   - label: Modelling suite
     url: https://github.com/ARPST-UniMelb
+  - label: Report (AR-PST Stage 5, Topic 4-1)
+    url: https://www.csiro.au/en/research/technology-space/energy/Electricity-transition/AR-PST/Stage-5
 ---
 
 With the projected retirement of thermal coal power plants and the associated
