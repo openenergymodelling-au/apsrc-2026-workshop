@@ -22,11 +22,11 @@ links:
     url: https://github.com/Open-ISP
 ---
 
-The Open-ISP project is building a fully open-source, transparent modelling
-platform based on the Australian Energy Market Operator’s (AEMO) Integrated
-System Plan (ISP) methodology and data. This initiative aims to facilitate
-wider access to energy system modelling and enable more rapid, inclusive
-collaboration across researchers, policymakers, and institutions. This
-demonstration will provide an in-depth introduction to the Open-ISP modelling
-suite and an open forum for dialogue, feedback, and knowledge exchange with the
+The OpenISP project is building an open-source, accessible and transparent
+electricity system model based on the Australian Energy Market Operator’s (AEMO)
+Integrated System Plan (ISP) methodology and data. This initiative aims to
+facilitate wider access to energy system modelling and enable more rapid,
+inclusive collaboration across researchers, policymakers, and institutions. This
+presentation will provide an introduction to the OpenISP modelling suite,
+alongside a showcase and opportunities for discussion and feedback from the
 broader energy research community.
