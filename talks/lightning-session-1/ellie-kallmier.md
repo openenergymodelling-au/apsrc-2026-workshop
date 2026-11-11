@@ -1,7 +1,7 @@
 ---
 order: 2
 
-title: "Open-ISP: an open-source electricity system model based on AEMO’s Integrated System Plan"
+title: "OpenISP: an open-source electricity system model based on AEMO’s Integrated System Plan"
 
 authors:
   - name: Ellie Kallmier
