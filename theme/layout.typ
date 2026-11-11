@@ -77,6 +77,7 @@
   venue: none,
   note: none,
   support: none,
+  logos-label: none,
   logos: (),
   draft: none,
 ) = with-theme(t => {
@@ -107,11 +108,8 @@
     if place.len() > 0 { block(below: 0.4em, text(fill: t.muted, place.join(meta-sep))) }
     if support != none { block(below: 0.4em, text(fill: t.muted, support)) }
     if logos.len() > 0 {
-      block(above: 1em, stack(
-        dir: ltr,
-        spacing: 8mm,
-        ..logos.map(l => box(height: t.logo-height, l)),
-      ))
+      if logos-label != none { block(above: 0.9em, below: 0.5em, text(fill: t.muted, logos-label)) }
+      block(stack(dir: ltr, spacing: 8mm, ..logos.map(l => box(height: t.logo-height, l))))
     }
     if t.header-rule != none {
       block(above: 1em, line(length: 100%, stroke: t.header-rule))
