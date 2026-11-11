@@ -4,7 +4,7 @@ order: 1
 title: "Modelling green industrial hubs in Indonesia"
 
 authors:
-  - name: Jenny Haywood
+  - name: Jenny Hayward
     honorific: Dr
     affiliation: CSIRO
 ---
