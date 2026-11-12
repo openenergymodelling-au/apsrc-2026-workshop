@@ -212,7 +212,15 @@ local function load_program(meta)
   for _, key in ipairs({ "kicker", "title", "date", "time", "venue", "note", "support" }) do
     event[key] = inlines_or_nil(ev[key])
   end
-  for _, path in ipairs(as_list(ev.logos)) do event.logos[#event.logos + 1] = stringify(path) end
+  -- Each logo is a path, or { file = path, alt = description }.
+  for _, l in ipairs(as_list(ev.logos)) do
+    if type(l) == "table" and l.file then
+      event.logos[#event.logos + 1] = { file = stringify(l.file), alt = stringify(l.alt or "") }
+    else
+      event.logos[#event.logos + 1] = { file = stringify(l), alt = "" }
+    end
+  end
+  event.logos_label = inlines_or_nil(ev["logos-label"])
 
   local sessions = {}
   for _, s in ipairs(as_list(meta.sessions)) do
@@ -301,14 +309,15 @@ function T.authors(authors)
 end
 
 function T.header(event, draft)
-  local logos = {}
-  for _, path in ipairs(event.logos) do
-    logos[#logos + 1] = "image(" .. T.str(path) .. ", height: 100%)"
-  end
   local args = {}
   for _, key in ipairs({ "kicker", "title", "date", "time", "venue", "note", "support" }) do
     args[#args + 1] = key .. ": " .. T.inl(event[key])
   end
+  local logos = {}
+  for _, l in ipairs(event.logos) do
+    logos[#logos + 1] = "image(" .. T.str(l.file) .. ", height: 100%, alt: " .. T.str(l.alt) .. ")"
+  end
+  args[#args + 1] = "logos-label: " .. T.inl(event.logos_label)
   args[#args + 1] = "logos: " .. T.array(logos)
   args[#args + 1] = "draft: " .. T.inl(draft)
   return pandoc.RawBlock("typst", "#event-header(" .. table.concat(args, ",\n  ") .. ")")
@@ -419,8 +428,11 @@ function H.header(event)
   if #place > 0 then out[#out + 1] = H.tag("p", "event-header__place", table.concat(place, " · ")) end
   if event.support then out[#out + 1] = H.tag("p", "event-header__place", H.inl(event.support)) end
   if #event.logos > 0 then
+    if event.logos_label then out[#out + 1] = H.tag("p", "event-header__place", H.inl(event.logos_label)) end
     local imgs = {}
-    for _, path in ipairs(event.logos) do imgs[#imgs + 1] = '<img src="' .. H.attr(path) .. '" alt="">' end
+    for _, l in ipairs(event.logos) do
+      imgs[#imgs + 1] = '<img src="' .. H.attr(l.file) .. '" alt="' .. H.attr(l.alt) .. '">'
+    end
     out[#out + 1] = H.tag("div", "event-header__logos", table.concat(imgs))
   end
   out[#out + 1] = "</header>"

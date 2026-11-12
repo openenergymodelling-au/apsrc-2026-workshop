@@ -101,10 +101,11 @@ $navbar-hl: $apsrc-primary;
 .event-header__logos {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-top: 1rem;
+  align-items: center;
+  gap: 1rem 2rem;
+  margin-bottom: 0.5rem;
 
-  img { height: 3rem; width: auto; }
+  img { height: 3rem; width: auto; max-width: 100%; }
 }
 
 .program-downloads {

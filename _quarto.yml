@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - logos/       # sponsor logos, copied to the website
   render:
     - index.qmd     # web: schedule -> _site/index.html
     - talks.qmd     # web: talks    -> _site/talks.html
