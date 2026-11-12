@@ -209,7 +209,7 @@ local function load_program(meta)
 
   local ev = meta.event or {}
   local event = { logos = {} }
-  for _, key in ipairs({ "kicker", "title", "date", "time", "venue", "note", "support" }) do
+  for _, key in ipairs({ "kicker", "title", "byline", "date", "time", "venue", "note", "support" }) do
     event[key] = inlines_or_nil(ev[key])
   end
   -- Each logo is a path, or { file = path, alt = description }.
@@ -310,7 +310,7 @@ end
 
 function T.header(event, draft)
   local args = {}
-  for _, key in ipairs({ "kicker", "title", "date", "time", "venue", "note", "support" }) do
+  for _, key in ipairs({ "kicker", "title", "byline", "date", "time", "venue", "note", "support" }) do
     args[#args + 1] = key .. ": " .. T.inl(event[key])
   end
   local logos = {}
@@ -420,6 +420,7 @@ function H.header(event)
   local out = { '<header class="event-header">' }
   if event.kicker then out[#out + 1] = H.tag("p", "event-header__kicker", H.inl(event.kicker)) end
   if event.title then out[#out + 1] = H.tag("h1", "event-header__title", H.inl(event.title)) end
+  if event.byline then out[#out + 1] = H.tag("p", "event-header__byline", H.inl(event.byline)) end
   if event.date then out[#out + 1] = H.tag("p", "event-header__date", H.inl(event.date)) end
   if event.time then out[#out + 1] = H.tag("p", "event-header__time", H.inl(event.time)) end
   local place = {}

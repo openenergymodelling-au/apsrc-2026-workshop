@@ -11,11 +11,13 @@ draft-notice: "**Draft program.** Times, talks and speakers may still change."
 event:
   kicker: "2026 Asia-Pacific Solar Research Conference"
   title: "Open-Source Energy System Modelling Workshop"
+  # Short description under the title.
+  byline: "An interactive workshop combining presentations, demonstrations, tutorials and open discussion on topics relevant to the open-source energy modelling community."
   # Page footer and PDF title (defaults to the title if left out)
   footer: "APSRC Open-Source Energy System Modelling Workshop"
   date: "Monday 30 November 2026"
   time: "11:00 am for an 11:30 am start · Finishes 4:00 pm, followed by networking"
-  venue: "Australian National University, Canberra"   # building / room to come
+  venue: "Room 6.02, [Marie Reay Teaching Centre](https://maps.app.goo.gl/GrTQ6SBZfmydb6HM8), Australian National University, Canberra"
   note: "In person only"
   # support: "Supported by RACE for 2030 and DCCEEW"   # optional text line under the venue
   # Sponsor logos, under the venue line with the label above them. Paths are

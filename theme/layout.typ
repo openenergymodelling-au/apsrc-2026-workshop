@@ -72,6 +72,7 @@
 #let event-header(
   kicker: none,
   title: none,
+  byline: none,
   date: none,
   time: none,
   venue: none,
@@ -94,13 +95,16 @@
         kicker,
       ))
     }
-    block(below: 1em, text(
+    block(below: if byline != none { 0.6em } else { 1em }, text(
       font: t.heading-font,
       size: t.title-size,
       weight: t.title-weight,
       fill: t.title-color,
       title,
     ))
+    if byline != none {
+      block(below: 1em, text(size: t.meta-size + 0.5pt, fill: t.muted, byline))
+    }
     set text(size: t.meta-size)
     if date != none { block(below: 0.4em, text(weight: t.date-weight, date)) }
     if time != none { block(below: 0.4em, time) }

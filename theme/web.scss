@@ -87,6 +87,13 @@ $navbar-hl: $apsrc-primary;
   font-weight: 700;
 }
 
+.event-header .event-header__byline {
+  max-width: 42rem;
+  margin: 0.25rem 0 1rem;
+  font-size: 1.1rem;
+  color: $apsrc-grey;
+}
+
 .event-header__title {
   color: $apsrc-primary;
   font-weight: 700;
