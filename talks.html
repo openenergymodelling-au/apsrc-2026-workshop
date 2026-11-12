@@ -370,10 +370,30 @@ open-floor session.</p></div>
 <div class="talk__abstract"><p><em>Abstract to come.</em></p></div>
 </article>
 <article class="talk" id="talk-tim-weber">
-<h3 class="talk__title anchored">FIRM</h3>
-<p class="talk__authors"><span class="author author--presenter">Tim Weber</span></p>
+<h3 class="talk__title anchored">FIRM_CE</h3>
+<p class="talk__authors"><span class="author author--presenter">Timothy Weber</span></p>
 <p class="talk__affiliations"><span>The Australian National University</span></p>
-<div class="talk__abstract"><p><em>Abstract to come.</em></p></div>
+<div class="talk__abstract"><p>FIRM_CE is an open-source tool for modelling electricity grid
+investment and testing reliability over decades of weather data. It is
+based on the FIRM framework, originally developed by Lu et al. (2021)
+and adapted in Weber et al. (2026) . The purpose of FIRM_CE is to
+rapidly evaluate thousands (or millions) of grid configurations very
+quickly through an evolutionary optimisation, testing each configuration
+for reliability and cost.</p>
+<p>Conventional linear programs require separate variables for each
+investment and dispatch decision, which can drive up computation time
+when using decades of high-resolution data. FIRM_CE only optimises the
+investment decision variables, with simple business rules managing the
+dispatch of generators instead. The fast dispatch rules avoid the need
+for temporal aggregation methods that skew away from long-duration
+storage investment.</p>
+<p>The RE100 Group is currently developing techniques for performing
+modelling to generate alternatives (MGA) using the FIRM framework. Using
+MGA techniques, FIRM_CE can explore thousands of grid configurations in
+the near-optimal space, allowing decision makers to consider a vast
+number of alternative pathways that all have the exact same cost (within
+the very high margin of uncertainty).</p></div>
+<ul class="talk__links"><li><span class="talk__link-label">Lu et al. (2021)</span>: <a href="https://doi.org/10.1016/j.energy.2020.119678">doi.org/10.1016/j.energy.2020.119678</a></li><li><span class="talk__link-label">Weber et al. (2026)</span>: <a href="https://doi.org/10.1016/j.xcrp.2026.103523">doi.org/10.1016/j.xcrp.2026.103523</a></li><li><span class="talk__link-label">FIRM_CE</span>: <a href="https://github.com/TimWeberRE100/FIRM_CE">github.com/TimWeberRE100/FIRM_CE</a></li></ul>
 </article>
 </section>
 <section id="talks-panel-session" class="level2">
