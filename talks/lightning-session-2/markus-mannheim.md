@@ -1,7 +1,7 @@
 ---
 order: 3
 
-title: "Investment uncertainty: modelling the caution that holds firms back"
+title: "Investment uncertainty: modelling the caution that holds investors back"
 
 authors:
   - name: Markus Mannheim
@@ -15,10 +15,10 @@ links:
     url: https://colab.research.google.com/github/MarkusMannheim/investment_sandbox/blob/main/notebooks/investment_sandbox.ipynb
 ---
 
-Least-cost models work out what an electricity system should contain, and assume that whatever is cheapest gets built. This agent-based model asks who is *willing* to build it. The model has no planner, and no one in it knows the future. It plays out a year at a time. Each year, the firms, which dislike risk, decide what to commit, using a forecast of what new plant might earn.
+Least-cost models work out what an electricity system should contain, and assume that whatever is cheapest gets built. They cannot show investors holding back in the face of an uncertain future.
 
-In a least-cost model, a higher cost of capital (WACC) makes plant more expensive, but everything still gets built. In this model, cautious firms hold back, so prices rise and demand goes unmet.
+We are building an agent-based model of the National Electricity Market that asks who is *willing* to build. This talk presents the Investment sandbox, an open-source, highly simplified version of that model, with one stylised region. Each year its firms, which dislike risk and do not know which future will arrive, decide what to commit using a forecast of what new plant might earn.
 
-The model also tests the effect of government intervention. It includes a reliability tender, whose contract length can be varied, and shows what it does to unmet demand and what the contracts cost.
+In a least-cost model, a higher cost of capital (WACC) makes plant more expensive, but everything still gets built. In the sandbox, cautious firms hold back, so prices rise and demand goes unmet. A government reliability tender shows what intervention changes and what it costs.
 
-The model follows one region for 20 years, runs in a notebook and is a much simplified version of a larger, higher-fidelity model of the National Electricity Market. Participants can run it during the workshop, and each run takes seconds.
+The sandbox runs in a Python notebook and each run takes seconds, so participants can try it at the workshop.
