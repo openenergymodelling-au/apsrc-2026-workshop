@@ -1,11 +1,32 @@
 ---
 format: typst
-# Full program (PDF): schedule, then talk details.
-# Both are built from schedule.yml and talks/.
+# Full program (PDF): schedule, then general information, then talk details.
+# The schedule and talk details are built from schedule.yml and talks/.
 ---
 
 ::: {.program-schedule}
 :::
+
+{{< pagebreak >}}
+
+# General information
+
+## Acknowledgement of Country
+
+We acknowledge the Ngunnawal and Ngambri-Kamberri peoples, the Traditional
+Custodians of the lands on which the ANU Acton campus stands and on which we
+meet today. We pay our respects to their Elders past and present, and to all
+Aboriginal and Torres Strait Islander peoples.
+
+## Registration
+
+Register at Room 6.02, [Marie Reay Teaching
+Centre](https://maps.app.goo.gl/GrTQ6SBZfmydb6HM8), Australian National
+University, Canberra, from 11 am on Monday 30 November.
+
+## Wi-Fi
+
+There will be free Wi-Fi at the venue. The password is **APSRC2026!**
 
 {{< pagebreak >}}
 
